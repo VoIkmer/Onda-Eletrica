@@ -1,0 +1,38 @@
+{
+    "membros": [
+        {
+            "name": "Cadu",
+            "active": true,
+            "image": "Images/team/cadu.jpg",
+            "bio": "Descrição do Membro 1.",
+            "dates": {
+                "UFBA": "2022.2",
+                "joinOnda": "2024.1",
+                "egressOnda": null
+            },
+            "social": [
+                {
+                    "name": "email",
+                    "link": "mailto:email@example.com"
+                }
+            ]
+        },
+        {
+            "name": "Membro 2",
+            "active": true,
+            "image": "Images/team/member2.jpg",
+            "bio": "Descrição do Membro 2.",
+            "dates": {
+                "UFBA": "2022.2",
+                "joinOnda": "2023",
+                "egressOnda": true
+            },
+            "social": [
+                {
+                    "name": "email",
+                    "link": "mailto:email@example.com"
+                }
+            ]
+        }
+    ]
+}

@@ -249,13 +249,15 @@ footer {
   background-color: #57a3cc;
   color: white;
   padding: 15px 0;
-  text-align: center;
+
+  
 }
 
 .footer-info {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
+ 
 }
 
 .footer-info p {
@@ -279,6 +281,7 @@ footer p {
 .footer-logo img {
   max-width: 100px;
 }
+
 
 .photo-gallery {
   display: flex;
@@ -446,8 +449,8 @@ footer p {
 }
 
 .separator {
-  width: 80%;
-  height: 2px;
+  width: 70%;
+  height: 1px;
   background-color: #3b7594f5;
   margin: 40px auto; 
 }
