@@ -13,26 +13,10 @@
             "social": [
                 {
                     "name": "email",
-                    "link": "mailto:email@example.com"
-                }
-            ]
-        },
-        {
-            "name": "Membro 2",
-            "active": true,
-            "image": "Images/team/member2.jpg",
-            "bio": "Descrição do Membro 2.",
-            "dates": {
-                "UFBA": "2022.2",
-                "joinOnda": "2023",
-                "egressOnda": true
-            },
-            "social": [
-                {
-                    "name": "email",
-                    "link": "mailto:email@example.com"
+                    "link": "mailto:educarl0s.gb2003@gmail.com"
                 }
             ]
         }
+        
     ]
 }

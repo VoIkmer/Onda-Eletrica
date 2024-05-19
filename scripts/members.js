@@ -2,40 +2,46 @@ fetch('data/members.json')
     .then(response => response.json())
     .then(data => {
         const membros = data.membros;
+        const teamMembersContainer = document.getElementById('team-members');
 
         membros.forEach((membro, index) => {
+            if (membro.dates.egressOnda === null) {
+                const memberElement = document.createElement('div');
+                memberElement.className = 'team-member';
+                memberElement.id = `member${index + 1}`;
 
-            if (membro.dates.egressOnda !== null) {
-                return;
-            }
+                const imgElement = document.createElement('img');
+                imgElement.src = membro.image;
+                imgElement.alt = `Foto de ${membro.name}`;
 
-            const memberElement = document.getElementById(`member${index + 1}`);
-            memberElement.querySelector('img').src = membro.image;
-            memberElement.querySelector('img').alt = membro.name;
-            memberElement.querySelector('h3').textContent = membro.name;
-            memberElement.querySelector('p#member1-dates').textContent = `Semestre de Ingresso na UFBA: ${membro.dates.UFBA}`;
-            
+                const teamCardElement = document.createElement('div');
+                teamCardElement.className = 'team-card';
 
-            const ondaIngresso = document.createElement('p');
-            ondaIngresso.textContent = `Semestre de Ingresso na Onda Elétrica: ${membro.dates.joinOnda}`;
-            memberElement.querySelector('.team-card').appendChild(ondaIngresso);
-            
+                const nameElement = document.createElement('h3');
+                nameElement.textContent = membro.name;
 
-            if (membro.bio) {
+                const datesElement = document.createElement('p');
+                datesElement.textContent = `Semestre de Ingresso na UFBA: ${membro.dates.UFBA}, Semestre de Ingresso no Onda: ${membro.dates.joinOnda}`;
+
                 const bioElement = document.createElement('p');
-                bioElement.textContent = `Bio: ${membro.bio}`;
-                memberElement.querySelector('.team-card').appendChild(bioElement);
-            }
-            
+                bioElement.textContent = membro.bio;
 
-            if (membro.social) {
-                membro.social.forEach(social => {
-                    if (social.name === 'email') {
-                        const emailElement = document.createElement('p');
-                        emailElement.textContent = `Email: ${social.link}`;
-                        memberElement.querySelector('.team-card').appendChild(emailElement);
-                    }
-                });
+                const emailElement = document.createElement('p');
+                const emailLink = document.createElement('a');
+                emailLink.href = membro.social.find(social => social.name === 'email').link;
+                emailLink.textContent = membro.social.find(social => social.name === 'email').link;
+                emailElement.appendChild(emailLink);
+
+                teamCardElement.appendChild(nameElement);
+                teamCardElement.appendChild(datesElement);
+                teamCardElement.appendChild(bioElement);
+                teamCardElement.appendChild(emailElement);
+
+                memberElement.appendChild(imgElement);
+                memberElement.appendChild(teamCardElement);
+
+                teamMembersContainer.appendChild(memberElement);
             }
         });
-    });
+    })
+    .catch(error => console.error('Erro ao carregar os membros:', error));
