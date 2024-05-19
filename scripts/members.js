@@ -20,16 +20,23 @@ fetch('data/members.json')
                 const nameElement = document.createElement('h3');
                 nameElement.textContent = membro.name;
 
-                const datesElement = document.createElement('p');
-                datesElement.textContent = `Semestre de Ingresso na UFBA: ${membro.dates.UFBA}, Semestre de Ingresso no Onda: ${membro.dates.joinOnda}`;
+                const datesElement = document.createElement('div');
+                datesElement.className = 'member-dates'; 
+                const ufbaDateElement = document.createElement('p');
+                ufbaDateElement.textContent = `Semestre de Ingresso na UFBA: ${membro.dates.UFBA}`;
+                const ondaDateElement = document.createElement('p');
+                ondaDateElement.textContent = `Semestre de Ingresso no Onda: ${membro.dates.joinOnda}`;
+                datesElement.appendChild(ufbaDateElement);
+                datesElement.appendChild(ondaDateElement);
 
                 const bioElement = document.createElement('p');
                 bioElement.textContent = membro.bio;
 
                 const emailElement = document.createElement('p');
                 const emailLink = document.createElement('a');
+                const emailAddress = membro.social.find(social => social.name === 'email').link.replace('mailto:', ''); // Extrai apenas o endereço de e-mail
                 emailLink.href = membro.social.find(social => social.name === 'email').link;
-                emailLink.textContent = membro.social.find(social => social.name === 'email').link;
+                emailLink.textContent = emailAddress; // Usa apenas o endereço de e-mail como texto do link
                 emailElement.appendChild(emailLink);
 
                 teamCardElement.appendChild(nameElement);

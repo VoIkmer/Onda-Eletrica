@@ -4,6 +4,23 @@
             "name": "Cadu",
             "active": true,
             "image": "Images/team/cadu.jpg",
+            "bio": "",
+            "dates": {
+                "UFBA": "2022.2",
+                "joinOnda": "2024.1",
+                "egressOnda": null
+            },
+            "social": [
+                {
+                    "name": "email",
+                    "link": "mailto:educarl0s.gb2003@gmail.com"
+                }
+            ]
+        },
+        {
+            "name": "Cadu",
+            "active": true,
+            "image": "Images/team/cadu.jpg",
             "bio": "Descrição do Membro 1.",
             "dates": {
                 "UFBA": "2022.2",
@@ -17,6 +34,7 @@
                 }
             ]
         }
+
         
     ]
 }
