@@ -30,21 +30,29 @@ O objetivo é atrair uma maior quantidade de acessos ao site e por consequência
 ## Como fazer alterações
 
 1. Instalar o Visual Studio Code
+
   Link de download: https://code.visualstudio.com/download
 
 2. Instalar o git
+
   Link de download: https://git-scm.com/downloads
 
 3. Configure ambos
+
   Link com tutorial: https://www.youtube.com/watch?v=mmcOw2ynWEs
+
   Link com tutorial 2ª parte: https://www.youtube.com/watch?v=ZBpGOjB_8mk&t=1s
+
   Outras sugestões: https://www.youtube.com/watch?v=kbWbRx3-9IY&t=370s
 
 4. Baixando os arquivos e modificando
+
   Após configurar seu Vscode e git, recomendo que baixe a extensão Live Server e as extensões necessária de github.
 
 5. Como checar minhas modificações
+
   Basta clicar com o botão direito do mouse em algum dos arquivos HTML e escolher a opção "Open Live Server"
+  
   Com isso você consegue ver em tempo real as modificações que seu código trazem a página e assim melhor direccionar.
 
 
