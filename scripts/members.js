@@ -36,7 +36,7 @@ fetch('data/members.json')
                 const emailLink = document.createElement('a');
                 const emailAddress = membro.social.find(social => social.name === 'email').link.replace('mailto:', ''); // Extrai apenas o endereço de e-mail
                 emailLink.href = membro.social.find(social => social.name === 'email').link;
-                emailLink.textContent = emailAddress; // Usa apenas o endereço de e-mail como texto do link
+                emailLink.textContent = emailAddress;
                 emailElement.appendChild(emailLink);
 
                 teamCardElement.appendChild(nameElement);
