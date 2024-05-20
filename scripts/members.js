@@ -5,7 +5,7 @@ fetch('data/members.json')
         const teamMembersContainer = document.getElementById('team-members');
 
         membros.forEach((membro, index) => {
-            if (membro.dates.egressOnda === null) {
+            if (membro.dates.egressOnda === false) {
                 const memberElement = document.createElement('div');
                 memberElement.className = 'team-member';
                 memberElement.id = `member${index + 1}`;
