@@ -249,7 +249,6 @@ nav ul li a:hover {
 }
 
 /* Rodapé */
-
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -257,43 +256,40 @@ footer {
   align-items: center;
   width: 100%;
   background-color: #57a3cc;
-  color: white;
+  color: #fff;
   padding: 15px 0;
-
-  
+  position: relative;
 }
-
 .footer-info {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
- 
 }
-
 .footer-info p {
   margin-bottom: 5px;
 }
-
 footer p {
-    display: block;
-    margin-bottom: 5px;
-    width: 100%;
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
 }
-
 .footer-text {
-  width: 60%; 
+  width: 60%;
 }
-
 .footer-logo {
-  width: 350px;  
+  width: 350px;
 }
-
 .footer-logo img {
   max-width: 100px;
 }
-
 .footer-info .text-info {
   padding-left: 20px;
+}
+footer p.text-center {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 /* Galeria de fotos */
