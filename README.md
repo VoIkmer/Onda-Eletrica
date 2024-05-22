@@ -23,7 +23,9 @@ O objetivo é atrair uma maior quantidade de acessos ao site e por consequência
    
   3. Buscar novas ideias para adicionar mais coisas ao site
 
-3.1 Sugestão pessoal -> Aba com foto dos nossos experimentos, como funcionam e vídeo em prática.
+3.1 -> Aba com foto dos nossos experimentos, como funcionam e vídeo em prática.(Sugestão Pessoal)
+
+3.2 -> Na página de processo seletivo fazer uma parte para preencher os dados de processo seletivo e jogar isso numa planilha do onda para ser mais rápido e prático, ao automatizar isso.(Sugestão Pessoal)
 
   4. Melhorar a organização do arquivo
 
