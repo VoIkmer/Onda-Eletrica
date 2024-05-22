@@ -334,7 +334,6 @@ footer p {
   margin: 0 auto;
 }
 
-
 .team-row {
     display: flex;
     flex-wrap: nowrap; 
@@ -413,35 +412,6 @@ footer p {
   object-fit: cover;
 }
 
-.contact-card {
-  background-color: #3b7594f5;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  max-width: calc(50% - 10px);
-  margin-left: auto;
-}
-
-.contact-card ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.contact-card ul li {
-  margin: 0 10px;
-}
-
-.contact-card ul li:last-child {
-  margin-right: 0;
-}
-
-.contact-card h3 {
-  margin-top: 0;
-}
-
 .equipe {
   padding: 20px;
   text-align: center;
@@ -476,6 +446,36 @@ footer p {
 
 .team-card a:hover {
   text-decoration: underline;
+}
+
+/* Contato */
+.contact-card {
+  background-color: #3b7594f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: calc(50% - 10px);
+  margin-left: auto;
+}
+
+.contact-card ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-card ul li {
+  margin: 0 10px;
+}
+
+.contact-card ul li:last-child {
+  margin-right: 0;
+}
+
+.contact-card h3 {
+  margin-top: 0;
 }
 
 /* Diversos */
