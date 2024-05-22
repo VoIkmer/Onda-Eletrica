@@ -1,17 +1,1 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const logo = document.querySelector(".logo img");
-    if (logo) {
-        logo.addEventListener("click", function() {
-            window.location.href = "index.html";
-        });
-    }
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu');
-
-    menuToggle.addEventListener('click', function() {
-        menu.classList.toggle('active');
-    });
-});
+document.addEventListener("DOMContentLoaded",function(){const e=document.querySelector(".logo img");e&&e.addEventListener("click",function(){window.location.href="index.html"})}),document.addEventListener("DOMContentLoaded",function(){const e=document.querySelector(".menu-toggle"),n=document.querySelector(".menu");e.addEventListener("click",function(){n.classList.toggle("active")})});
