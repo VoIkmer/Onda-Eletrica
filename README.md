@@ -7,17 +7,17 @@ O objetivo é atrair uma maior quantidade de acessos ao site e por consequência
 
   1. Ajeitar a página de equipe.
 
-1.1 Colocar em categorias(Membros e Probatório).
+1.1 Colocar os Cards de membros lado a lado com 4 por linha.
    
-1.2 Preencher os cards com nome, foto e semestre de ingresso de cada.
+1.2 Preencher os cards com nome, foto e semestre de ingresso de cada.✅
    
   2. Ajeitar a página de atividades
    
-2.1 Separar as atividades nas 4 categorias
+2.1 Separar as atividades nas 4 categorias✅
    
-2.2 Colocar ícones clicáveis associados a cada atividade
+2.2 Colocar ícones clicáveis associados a cada atividade✅
   
-2.3 Cada atividade deve levar a uma página exclusiva dela que menciona projetos e etc.
+2.3 Cada atividade deve levar a uma página exclusiva dela que menciona projetos e etc.✅
   
 2.4 Traçar um plano de como melhor organizar isso
    
