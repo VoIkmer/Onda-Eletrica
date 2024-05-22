@@ -53,9 +53,10 @@ Após configurar seu Vscode e git, recomendo que baixe a extensão Live Server e
 
 Basta clicar com o botão direito do mouse em algum dos arquivos HTML e escolher a opção "Open Live Server"
   
-Com isso você consegue ver em tempo real as modificações que seu código trazem a página e assim melhor direccionar.
+Com isso você consegue ver em tempo real as modificações que seu código trazem a página e assim melhor direcionar.
 
   6. Básico de HTML,CSS e Javascript
 
 Link para aprendizado(HTML + CSS): https://www.youtube.com/watch?v=HGTJBPNC-Gw&t=887s
+
 Link para aprendizado(Javascript): https://www.youtube.com/watch?v=lfmg-EJ8gm4&t=127s
