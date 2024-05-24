@@ -25,7 +25,7 @@
             "dates": {
                 "UFBA": "2022.2",
                 "joinOnda": "2024.1",
-                "egressOnda": false
+                "egressOnda": true
             },
             "social": [
                 {
