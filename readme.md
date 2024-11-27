@@ -20,12 +20,12 @@ Site institucional do grupo Onda Elétrica, desenvolvido para apresentar as ativ
 ├── css/
 │   └── style.css
 ├── pages/
-│   ├── atividades.html
-│   ├── equipe.html
-│   ├── minicursos.html
-│   ├── pesquisas.html
-│   └── processo-seletivo.html
-└── index.html
+    ├── atividades.html
+    ├── equipe.html
+    ├── minicursos.html
+    ├── pesquisas.html
+    ├── processo-seletivo.html
+    └── index.html
 ```
 
 ## Configuração e Instalação
