@@ -55,3 +55,7 @@ docs/
 *.temp
 *.bak
 ~$*
+
+
+models\header.html
+models\footer.html
