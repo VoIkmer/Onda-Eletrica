@@ -1,0 +1,57 @@
+# Compiled source code
+*.class
+*.o
+*.out
+*.pyc
+*.pyo
+*.exe
+*.dll
+*.so
+
+# Exclude IDE and generated files
+*.json
+*.yaml
+.arduinoIDE/
+.gitconfig
+
+
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Environment and system files
+.env
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Build files
+dist/
+build/
+*.jar
+*.war
+*.apk
+
+# Generated files
+*.min.*
+*.map
+coverage/
+docs/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+~$*

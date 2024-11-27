@@ -1,0 +1,272 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #f5b40f;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --white: #ffffff;
+  --transition-speed: 0.3s;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    will-change: transform, color;
+  }
+  
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 2rem;
+  }
+  
+  .logo a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-item {
+    margin-left: 1rem;
+  }
+  
+  .nav-item a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item a:hover {
+    color: var(--secondary-color);
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--white);
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .hero h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 32px;
+  }
+  
+  footer {
+    background-color: #252525;
+    color: #333333;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-social a {
+    color: var(--white);
+    margin: 0 0.5rem;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: var(--primary-color);
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+  
+    .nav-menu.active {
+      left: 0;
+    }
+  
+    .nav-item {
+      margin: 1rem 0;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .processo-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+    touch-action: manipulation;
+  }
+  
+  .btn:hover {
+    background-color: #0000003d;
+  }
+  
+  .calendario-processo {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+  }
+  
+  .calendario-processo thead {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  .calendario-processo th, 
+  .calendario-processo td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .calendario-processo tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .calendario-processo tbody tr:hover {
+    background-color: #e6e6e6;
+  }
+
+  .atividades-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .atividades-grid .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .atividades-grid .card img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .social-icon {
+    width: 40px;  /* Tamanho padrão dos ícones */
+    height: 40px; /* Mantém proporção quadrada */
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1); /* Efeito de zoom suave ao passar o mouse */
+  }
+
+  h3{
+    color: white;
+  }
+
+  p{
+    color: white;
+  }
+
+  .card-description{
+    color: black;
+    font-size: 20px;
+  }
+
+  .description{
+    color: black;
+    font-size: 20px;
+  }
+
+  .title{
+    color: black;
+    font-size: 60px;
+    align-items: center;
+  }
