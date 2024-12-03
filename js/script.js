@@ -3,6 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.querySelector('.nav-menu');
   const navLinks = document.querySelectorAll('.nav-item a');
 
+  // Function to close the menu
+  const closeMenu = () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  };
+
   // Toggle mobile menu
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
@@ -16,12 +23,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Close menu when a link is clicked
   navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      hamburger.classList.remove('active');
-      navMenu.classList.remove('active');
+    link.addEventListener('click', (event) => {
+      // Prevent default only for internal links
+      if (link.getAttribute('href').startsWith('#') || link.getAttribute('href').startsWith('/')) {
+        event.preventDefault();
+        
+        // Navigate to the link after a short delay to ensure menu closes
+        setTimeout(() => {
+          window.location.href = link.getAttribute('href');
+        }, 50);
+      }
       
-      // Restore body scrolling
-      document.body.style.overflow = 'auto';
+      closeMenu();
     });
   });
 
@@ -31,9 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isClickOnHamburger = hamburger.contains(event.target);
     
     if (!isClickInsideMenu && !isClickOnHamburger && navMenu.classList.contains('active')) {
-      hamburger.classList.remove('active');
-      navMenu.classList.remove('active');
-      document.body.style.overflow = 'auto';
+      closeMenu();
     }
   });
 
