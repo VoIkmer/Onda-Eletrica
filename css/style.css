@@ -427,8 +427,6 @@
       overflow-x: hidden;
       position: relative;
       z-index: 1;
-      background-color: #CEE7F4;
-      color: #333;
       font-family: 'League Spartan', sans-serif;
       will-change: transform, color;
       -webkit-tap-highlight-color: transparent;
