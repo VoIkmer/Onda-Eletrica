@@ -3,6 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.querySelector('.nav-menu');
   const navLinks = document.querySelectorAll('.nav-item a');
 
+  // Ensure hamburger and navMenu exist before adding event listeners
+  if (!hamburger || !navMenu) {
+    console.error('Mobile menu elements not found');
+    return;
+  }
+
   // Function to close the menu
   const closeMenu = () => {
     hamburger.classList.remove('active');
@@ -11,7 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // Toggle mobile menu
-  hamburger.addEventListener('click', () => {
+  hamburger.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent event from propagating
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
     
@@ -40,6 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Close menu if clicked outside
   document.addEventListener('click', (event) => {
+    if (!navMenu || !hamburger) return;
+
     const isClickInsideMenu = navMenu.contains(event.target);
     const isClickOnHamburger = hamburger.contains(event.target);
     
