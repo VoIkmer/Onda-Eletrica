@@ -439,15 +439,6 @@
       touch-action: manipulation;
     }
 
-    .wrapper {
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      overflow-x: hidden;
-      max-width: fit-content;
-      width: 100%;
-    }
   
     .header-image,
     .event-image {
