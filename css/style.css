@@ -432,7 +432,6 @@
       max-width: 100%;
       overflow-x: hidden;
       position: relative;
-      z-index: 1;
       font-family: 'League Spartan', sans-serif;
       will-change: transform, color;
       -webkit-tap-highlight-color: transparent;
@@ -515,14 +514,17 @@
   
     .hamburger.active .bar:nth-child(2) {
       opacity: 0 !important;
+      z-index: 10000 !important;
     }
   
     .hamburger.active .bar:nth-child(1) {
       transform: translateY(8px) rotate(45deg) !important;
+      z-index: 10000 !important;
     }
   
     .hamburger.active .bar:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg) !important;
+      z-index: 10000 !important;
     }
   
     /* Responsive Grid and Component Adjustments */
